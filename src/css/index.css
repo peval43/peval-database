@@ -1,0 +1,976 @@
+body {
+    min-height: 100%;
+    min-width: 1090px;
+    background-color: #fff;
+    font-family: "Microsoft Yahei", "微软雅黑", verdana;
+    color: #333;
+    font-size: 12px;
+    outline: 0;
+    position: relative;
+}
+
+.header {
+    height: 176px;
+    position: relative;
+    z-index: 2;
+}
+
+.nav {
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    background-color: #333;
+    z-index: 5;
+}
+
+.nav-bar {
+    width: 1090px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.news {
+    float: left;
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.news-c {
+    margin-left: 2px;
+    overflow: hidden;
+    height: 36px;
+    background: url(http://yanxuan.nosdn.127.net/d132c2561f18f1149d566a60d05fd9b7.gif) center left no-repeat
+}
+
+.nav-right {
+    float: right;
+}
+.news-c>ul{
+    top: -36px;
+    position: relative;
+}
+.news-c>ul>li{
+    padding-left: 26px;
+    height: 36px;
+}
+.news-c>ul>li>a{
+    color: #b4a078;
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: underline
+}
+.nav-right div {
+    float: left;
+    position: relative;
+    color: #ccc;
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.nav-right>div>div {
+    margin-left: 10px;
+}
+
+.nav-right>div>div:hover {
+    color: white;
+}
+
+.nav-right div>a {
+    display: inline-block;
+    color: #ccc;
+    margin-left: 10px;
+}
+
+.nav-right div>a:hover {
+    color: white;
+}
+
+.nav-right>div:hover .nav-list {
+    display: block;
+}
+
+.buss i {
+    background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png);
+    background-position: 0 -424px;
+    height: 5px;
+    width: 11px;
+    margin-left: 5px;
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+.nav-right .nav-list {
+    position: absolute;
+    text-align: center;
+    width: 89px;
+    background: white;
+    box-shadow: 3px 0px 7px #c5c4c4;
+    height: auto;
+    line-height: 50px;
+    display: none;
+}
+
+.nav-right .nav-list>a {
+    display: block;
+    color: black;
+    border-bottom: 1px solid goldenrod;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.nav-right .nav-list>.our {
+    border-bottom: none;
+}
+
+.nav-right .nav-list>a:hover {
+    color: goldenrod;
+}
+
+.nav-right b {
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-bottom: 5px solid white;
+    position: absolute;
+    left: 49px;
+    top: 27px;
+    display: none;
+}
+
+.nav-right>div:hover b {
+    display: block;
+}
+
+.app>i {
+    display: inline-block;
+    background-position: 0 0;
+    height: 11px;
+    width: 7px;
+    background: url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png);
+}
+
+.nav-right .App>div {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    min-width: 83px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    left: -21px;
+    height: auto;
+    padding: 8px;
+    display: none;
+}
+
+.nav-right .App>div>div {
+    vertical-align: middle;
+    margin: 0 auto 6px;
+    width: 117px;
+    height: 117px;
+}
+
+.App>div>span {
+    display: block;
+    text-align: center;
+    line-height: 1;
+    color: #b4a078;
+    font-size: 12px;
+}
+
+.nav-right>div:hover .erwei {
+    display: block;
+}
+
+
+/* 头部导航结束 */
+
+
+/* select部分开始 */
+
+.js {
+    height: 140px;
+}
+
+.js .logo {
+    position: absolute;
+    top: 24px;
+    left: 0;
+}
+
+.js .logo>i {
+    display: block;
+    background-position: 0 -202px;
+    height: 60px;
+    width: 124px;
+    background-image: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png)
+}
+
+.js .s-logo {
+    display: none;
+}
+
+.js .s-logo>i {
+    display: block;
+    background-position: 0 -272px;
+    height: 30px;
+    width: 90px;
+    background-image: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png)
+}
+
+.js .cart-warp {
+    position: relative;
+    margin-top: 26px;
+    margin-left: 49px;
+    float: right;
+    z-index: 4;
+}
+
+.js .cart {
+    position: relative;
+    cursor: pointer;
+    width: 134px;
+    height: 38px;
+    line-height: 14px;
+    border: 1px solid #B4A078;
+    border-radius: 19px;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+
+.js .cart>i {
+    display: inline-block;
+    margin-left: 22px;
+    background-position: 0 -114px;
+    height: 18px;
+    width: 18px;
+    background-image: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png);
+    font-style: normal
+}
+
+.js .cart>span {
+    display: inline-block;
+    color: #B4A078;
+    margin-left: 0px;
+    margin-top: -1px;
+    font-size: 14px;
+}
+
+.js .cart .cart-num {
+    margin-left: 3px;
+    margin-top: -1px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    z-index: 1;
+    vertical-align: bottom;
+    background-position: 0 -51px;
+    height: 19px;
+    width: 19px;
+    background-image: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png)
+}
+
+.js .cart .cart-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-position: 0 -142px;
+    height: 24px;
+    width: 24px;
+    overflow: hidden;
+    vertical-align: top;
+    font-size: 12px;
+    word-spacing: normal;
+    letter-spacing: normal;
+    background-image: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png);
+}
+
+.nav-two {
+    line-height: 1;
+    font-weight: 700;
+    position: absolute;
+    height: 30px;
+    bottom: 21px;
+    width: 100%;
+    top: 88px;
+}
+
+.nav-two li {
+    float: left;
+    margin-top: 27px;
+    font-size: 14px;
+    padding: 0 23px;
+}
+
+.nav-two li:hover .life-list {
+    display: block;
+}
+
+.nav-two .index {
+    padding-left: 0;
+}
+
+.nav-two a {
+    color: #b4a078;
+    border-bottom: 3px solid #b4a078;
+    display: block;
+    padding-bottom: 7px;
+}
+
+.life a {
+    display: block;
+    padding-bottom: 7px;
+    color: #000;
+    border: none;
+}
+
+.nav-two>li:hover .a {
+    color: #b4a078;
+    border-bottom: 3px solid #b4a078;
+}
+
+.life-list {
+    width: 1202px;
+    left: -56px;
+    right: auto;
+    position: absolute;
+    top: 51px;
+    background-color: transparent;
+    display: none;
+}
+
+.life-list>ul {
+    padding: 14px 20px 20px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.life-list>ul>div {
+    float: left;
+    width: 124px;
+    margin-right: 69px;
+}
+
+.life-list .life-good>.life-good-top {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 124px;
+    width: 124px;
+}
+
+.life-good {
+    float: left;
+    margin-right: 24pxs
+}
+
+.life-good-bot>div {
+    float: left;
+    width: 124px;
+}
+
+.l-g-list {
+    margin-bottom: 4px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.nav-two .life-good-bot .l-g-list img {
+    height: 50px;
+    width: 50px;
+    vertical-align: top;
+}
+
+.nav-two .life-good-bot .l-g-list a {
+    border: 0;
+}
+
+.nav-two .life-good-bot .l-g-list a:hover span {
+    color: #B4A078;
+}
+
+.search {
+    z-index: 3;
+    position: relative;
+    margin-top: 26px;
+    float: right;
+    width: 532px;
+    height: 36px;
+}
+
+.search-left>.search-icon{
+    position: absolute;
+    left: 18px;
+    top: 12px;
+    background-position: 0 -312px;
+    height: 14px;
+    width: 14px;
+    background-image: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxtop-sbc152a7ee5-e7ebdc8b2c.png);
+
+}
+.search-left>input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid #B4A078;
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 19px;
+    font-size: 14px;
+    width: 442px;
+    padding-left: 38px;
+    outline: 0;
+    overflow: hidden;
+    background: 0 0;
+    box-sizing: border-box;
+}
+.serch-data{
+    position: absolute;
+    top: 12px;
+    left: 38px;
+    color: #999;
+    display: block;
+    line-height: 1;
+    cursor: text;
+   
+    white-space: nowrap;
+    overflow: hidden;
+    width: 390px;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+.search-btn{
+    width: 90px;
+    height: 38px;
+    background-color: #B4A078;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    cursor: pointer;
+    float: right;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.search-bottom{
+    margin-top: 46px;
+    margin-left: 8px;
+    width: 444px;
+    height: 18px;
+    overflow: hidden;
+}
+.search-word{
+    position: relative;
+    overflow: hidden;
+}
+.hotword{
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 18px;
+    font-size: 0;
+}
+.hotword>a{
+    display: inline-block;
+    color: #999;
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+
+    cursor: pointer;
+    line-height: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 444px;
+    font-size: 12px;
+}
+.hotword .last-wrod{
+    border: none;
+}
+/* banner图 */
+.banner{
+    position: relative;
+    height: 420px;
+    width: 1339px;
+    top: 0;
+    overflow: hidden;
+}
+.banner>div{
+    position: relative;
+    top: 0;
+    
+   
+   
+}
+.banner img.show {
+    opacity: 1;
+}
+.banner>div img{
+    position:absolute;
+    opacity: 0;
+    transition: all .5s;
+    left: -18%;
+   
+}
+.banner>button{
+    position: absolute;
+    z-index:9;
+    top: 200px!important;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 80;
+    background-color: #D0C4AF;
+    border-radius: 500px;
+    display:block;
+    right:104.5px;
+   border:0;
+   background-image: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-s33e647f656-a21248af33.png);
+   background-repeat: no-repeat;
+   background-position: 0 -5628px;
+   top: 130px;
+   outline: 0;
+}
+.life-list{
+    z-index: 99;
+}
+.banner>button:hover{
+    background-color: #B4A078;
+}
+.banner .btn1{
+    left: 104.5px;
+    background-position: 0 -5408px;
+}
+.banner>ul{
+    position: absolute;
+    bottom: 4px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.banner>ul>li{
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 8px 10px;
+    padding: 0;
+    cursor: pointer;
+}
+.banner>ul>li>button{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 500px;
+    cursor: pointer;
+    color: transparent;
+    border: 1px solid #cecece;
+    background: #fff;
+}
+ /* banner图结束 */
+ /* header结束 */
+ /* main 开始*/
+.main{
+    margin-top: 30px;
+    position: relative;
+}
+.main .main-head{
+    padding-bottom: 20px;
+}
+.m-d-left{
+  float: left;  
+}
+.m-d-left a{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    float: left;
+    margin-right: 20px;
+    color: #000;
+}
+.m-d-left>small{
+    padding-top: 13px;
+    display: inline-block;
+    line-height: 2;
+    font-size: 14px;
+}
+.m-d-right{
+    float: right;
+}
+.m-d-right>a{
+    display: inline-block;
+    line-height: 1;
+    margin-left: 30px;
+    padding-top: 14px;
+    cursor: pointer;
+}
+/* 右边侧栏 */
+.floor{
+    top: 0px;
+    left: 0;
+    margin-left: 0;
+    width: 110px;
+    border: 1px solid #E2DED6;
+    z-index: 98;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    opacity: 1;
+    will-change: transform;
+    transform: translateZ(0);
+}
+.floor>li{
+    width: 108px;
+    height: 36px;
+    padding: 1px 11px 0;
+    text-align: left;
+    position: relative;
+    display: table;
+    cursor: pointer
+}
+.floor>.flor-li{
+    background: url(https://yanxuan.nosdn.127.net/7c1853dd59b79d823ad3c4f3a0330049.png) bottom no-repeat;
+    font-size: 16px;
+    color: #BB3343;
+    text-align: center;
+    line-height: 38px;
+    height: 38px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    font-weight: 700;
+    cursor: default;
+    padding: 0;
+}
+
+.floor .li2{
+    color: #BB3343;
+    font-weight: bold;
+}
+.floor img{
+ position: absolute;
+ width: 30px;
+ height: 30px;
+ vertical-align: top;
+ top: 2px;
+ left: 12px;
+}
+
+.floor span:hover {
+    color:  #BB3343;
+}
+.floor span{
+    vertical-align: middle;
+    display: table-cell;
+    line-height: 14px;
+    font-size: 12px;
+    padding-left: 36px;
+}
+/* 左边广告 */
+.ads
+{
+   top: 0px;
+   position: absolute;
+   bottom: 200px;
+   z-index: 99;
+   right: 0; 
+}
+.ads>.ad-1{
+    position: initial;
+    margin-bottom: 3px;
+}
+.ads>.ad-1>img{
+    width: 72px;
+
+}
+.ad-2{
+    display: block;
+    width: 72px;
+    height: 72px;
+    background-color: #fff;
+    color: #666;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    padding-top: 14px;
+    position: relative;
+}
+.ad-2>i{
+    display: inline-block;
+    background-position: 0 -297px;
+    height: 29px;
+    width: 28px;
+    background-image:url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sc3414db566-665cc0935c.png);
+}
+.ad-2>p{
+    line-height: 20px;
+    font-size: 14px;
+    margin: 8px auto 0;
+    position: relative;
+}
+.ad-3{
+    display: block;
+    width: 72px;
+    height: 72px;
+    background-color: #fff;
+    color: #666;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    padding-top: 15px;
+    position: relative
+}
+.ad-3>i{
+    display: inline-block;
+    background-position: 0 -87px;
+    height: 31px;
+    width: 32px;
+    
+    background-image: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxfixedtool-sc3414db566-665cc0935c.png)
+}
+.ad-3>p{
+    margin-top: 8px;
+    font-size: 14px;
+}
+.top{
+    display: none;
+}
+.top>i{
+    height: 15px;
+    width: 24px;
+   background-position: 0 -233px;
+}
+.ads>a:hover p{
+    color: #B4A078;
+}
+.ads>.ad-2:hover i{
+ background-position: 0 -258px;
+}
+.ads>.ad-3:hover i{
+    background-position: 0 -46px;
+}
+.ads>.top:hover i{
+    background-position: 0 -208px;
+}
+/* 登录注册框 */
+.box{
+    padding: 58px 40px 83px;
+    width: 304px;
+    height: 259px;
+    position: fixed;
+    left: 50%;
+    margin-left: -192px;
+    top: 50%;
+    margin-top: -200px;
+    background: white;
+    display: none;
+    z-index: 30000;
+    border-radius: 30px;
+}
+.box>span{
+   
+
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: 30px;
+  cursor: pointer;
+}
+.box .email-btn{
+    left: 40px;
+}
+.box .without-btn{
+   
+  color: #999;
+    right: 40px;
+}
+.box .without-btn:hover{
+    color: #B4A078;
+}
+.box .col-2{
+    left: 50%;
+    font-weight: normal;
+}
+.e-mail{
+    width: 298px !important;
+    height: 36px;
+    border: 1px solid #e8e8e8;
+    line-height: 36px;
+    border-radius: 2px;
+   
+}
+form{
+    margin-top: 42px;
+}
+.e-m-icon{
+    float: left;
+    width: 29px;
+    text-align: center;
+    padding: 7px 0 7px 7px;
+    height: 24px;
+}
+.e-mail>div>input{
+    height: 36px;
+    line-height: 36px;
+    padding-left: 8px;
+    width: 214px;
+    font-size: 14px;
+    font-weight: normal;
+    border: 0;
+    outline: none;
+}
+.box .x{
+    top: 12px;
+    right: 12px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    cursor: pointer;
+    background-position: 0 -94px;
+    background-image: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-component/p/20170601/style/img/x1/icon-yxclose-s2ee250e88f-c6ae3be3a2.png);
+    background-repeat: no-repeat;
+}
+.box .x:hover{
+    background-position: 0 -60px;
+}
+.e-mail .worn{
+    display: none;
+}
+.blank{
+    position: relative;
+    width: 300px;
+    height: 27px;
+    line-height: 16px;
+    font-size: 12px;
+}
+.box-btn{
+    margin-top: 40px;
+    margin-bottom: 11px;
+    
+   
+}
+.box-btn2{
+    margin-top: 192px;
+    margin-bottom: 11px; 
+    display: none;
+}
+.box-btn2>a{
+    display: block;
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: #b4a078;
+    font-size: 18px;
+    line-height: 48px;
+    border-radius: 2px;
+}
+.box-btn>a{
+    display: block;
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: #b4a078;
+    font-size: 18px;
+    line-height: 48px;
+    border-radius: 2px;
+}
+.box-footer{
+    height: 60px;
+    background: #F5F3EF;
+    overflow: hidden;
+    width: 359px;
+    bottom: -1px;
+    left: 0px;
+    position: absolute;
+    padding-right: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.footer-left{
+    margin: 0 0 0 32px;
+    padding-top: 18px;
+    height: 50px;
+    text-align: left;
+    float: left;
+}
+.footer-left>a{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    float: left;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    background: 0 0;
+    margin: 0 4px;
+    cursor: pointer;
+}
+.bg::after{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    margin-left: -15px;
+    clear: none;
+    visibility: visible;
+    overflow: auto;
+    content: '';
+    background-repeat: no-repeat;
+    background: url(https://yanxuan.nosdn.127.net/77f98b239f0d848eb54151c4ad6eab96.png)
+}
+.yi::after{
+    background-position: -5px -83px;
+}
+.zhuce-icon{
+    width: 120px;
+    height: 100px; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url(https://yanxuan.nosdn.127.net/77f98b239f0d848eb54151c4ad6eab96.png);
+    margin-left: -60px;
+    margin-top: -50px;
+    background-size: 100%;
+    background-position: -5px -239px;
+    background-repeat: no-repeat;
+    display: none;
+}
+/*渲染数据 */
+.cart-data li{
+    float: left;
+    margin-bottom: 10px;
+    text-align: center;
+    background: #ccc;
+    margin-left: 2px;
+}
+.cart-data p{
+    margin-top: 10px;
+    color: #BB3343;
+    font-size: 20px;
+}
