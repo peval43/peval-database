@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>封装函数</title>
+</head>
+
+<body>
+    <script>
+        //储存cookie
+        //document.cookie='name=zhangsan';
+        //document.cookie='age=100';
+        //document.cookie='sex=男'；
+
+        //储存cookie
+        function add(key, value, times) {
+
+
+            let d = new Date();
+            d.setDate(d.getDate() + times);
+            document.cookie = key + '=' + value + ';expires=' +
+                d;
+
+        }
+        console.log(add('name', 'zhangsan', 5))
+            //获取cookies
+            // function get(key) {
+            //     //输入key返回value
+            //     // console.log(document.cookie);
+            //     let cookie = document.cookie;
+            //     let arr = cookie.split(';');
+
+        //     for (let value of arr) {
+        //         // console.log(value)
+        //         let arr2 = value.split('=');
+        //         // console.log(arr2);
+        //         if (key === arr2[0]) {
+        //             return arr2[1];
+        //         }
+        //     }
+        // }
+        // console.log(get('name'));
+
+        //删除key对应cookie(将时间设为-1)
+        function del(key) {
+            add(key, '', -1);
+        }
+        del('name')
+    </script>
+</body>
+
+</html>

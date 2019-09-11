@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>正则表达式</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        div {
+            width: 260px;
+            margin: 0 auto;
+        }
+        
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 表单验证 -->
+    <div>
+        <p><label for="">用户名</label><input type="text"></p>
+        <p><label for="">密 码</label><input type="password"></p>
+        <p><label for="">e-mail</label><input type="text"></p>
+        <p><label for="">手机号码</label><input type="text"></p>
+    </div>
+    <script>
+        //创建正则表达式(正则浏览器内置对象)
+        //1.构造函数
+        //2.字面量法构建
+        // var reg = new RegExp
+        //用户名验证()
+        var input = document.querySelector('input');
+        // var str = input.value;
+        var reg = /./;
+        input.onblur = function() {
+                console.log(reg.test(input.value))
+            }
+            //test(str)方法在字符串中查找是否存在指定的正则表达式并返回布尔值，如果存在则返回 true，不存在则返回 false。xec()方法对一个指定的字符串执行一个正则表达式，简言之，就是在一个字符串中执行匹配检索。如果它没有找到任何匹配返回null，如果找到一个匹配，它将返回一个数组。
+    </script>
+</body>
+
+</html>

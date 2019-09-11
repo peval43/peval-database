@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .goodslist {}
+        
+        .goodslist li {
+            float: left;
+            width: 190px;
+            height: 266px;
+            margin: 0 5px 8px;
+            list-style: none;
+            border: 1px solid #ccc;
+        }
+        
+        .goodslist li img {
+            width: 120px;
+            height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="goodslist">
+        <ul>
+
+        </ul>
+    </div>
+
+    <script>
+        const oUl = document.querySelector('.goodslist ul');
+        let ajax = new XMLHttpRequest();
+        ajax.open('get', 'http://10.31.157.62/peval_object/object/dataphp/jd/piclist.php', true);
+        ajax.send();
+        ajax.onreadystatechange = function() {
+            if (ajax.readyState === 4) {
+                console.log(JSON.parse(ajax.responseText));
+                let dataarr = JSON.parse(ajax.responseText);
+                let strhtml = '';
+                for (let value of dataarr) {
+                    strhtml += `
+                        <li>
+                            <img src="${value.picurl}"/>
+                            <p>${value.title}</p>
+                            <span>￥${value.price}<span>
+                        </li>
+                    `;
+                }
+                oUl.innerHTML = strhtml;
+            }
+        }
+    </script>
+</body>
+
+</html>
